@@ -11,9 +11,9 @@ document.getElementById("order-form").addEventListener("submit", function (e) {
     const message = `Halo, saya ingin memesan:\n- Nama: ${name}\n- Menu: ${menuItem}\n- Jumlah: ${quantity}`;
 
     // Nomor WhatsApp tujuan (ubah dengan nomor Anda)
-    const phoneNumber = "+628223881917"; // Gunakan format internasional tanpa tanda "+" (contoh: 628 untuk Indonesia)
+    const phoneNumber = "628223881917"; // Format internasional tanpa "+" (contoh: 628 untuk Indonesia)
 
     // Redirect ke WhatsApp
-    const whatsappURL = `wa.me/+6288223881917${phoneNumber}?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/${6288223881917}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, "_blank");
 });
